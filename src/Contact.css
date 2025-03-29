@@ -1,0 +1,130 @@
+/* General Styles */
+.contact-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 30px;
+  padding: 40px 20px;
+  background-color: #f3f4f6;
+}
+
+.contact-box, .contact-info {
+  background: #caa45d;
+  padding: 30px;
+  border-radius: 10px;
+  width: 100%;
+  max-width: 450px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.contact-title {
+  font-size: 28px;
+  font-weight: bold;
+  color: #222;
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.contact-label, .contact-checkbox {
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.contact-input, .contact-textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 14px;
+}
+
+.contact-textarea {
+  height: 80px;
+  resize: none;
+}
+
+.error-text {
+  color: red;
+  font-size: 12px;
+}
+
+.contact-button {
+  width: 100%;
+  background: black;
+  color: white;
+  padding: 12px;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.contact-button:hover {
+  background: #333;
+}
+
+.contact-info {
+  background: white;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.contact-info h3 {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.contact-info p {
+  font-size: 14px;
+  color: #555;
+}
+
+.contact-image {
+  width: 100%;
+  max-width: 350px;
+  display: block;
+  margin: 0 auto 15px;
+}
+
+.success-message {
+  text-align: center;
+  color: green;
+  font-weight: bold;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .contact-container {
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+  }
+  .contact-box, .contact-info {
+    width: 80%;
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  .contact-title {
+    font-size: 24px;
+  }
+  .contact-label, .contact-checkbox {
+    font-size: 13px;
+  }
+  .contact-button {
+    font-size: 14px;
+    padding: 10px;
+  }
+}
